@@ -32,6 +32,13 @@
 		932CCEC71DC3D2DB001C8405 /* PMKMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932CCEC01DC3D2DB001C8405 /* PMKMapKit.framework */; };
 		932CCEC81DC3D2DB001C8405 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932CCEC11DC3D2DB001C8405 /* PromiseKit.framework */; };
 		932CCEC91DC3D2DB001C8405 /* SwiftMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932CCEC21DC3D2DB001C8405 /* SwiftMessages.framework */; };
+		6326AF461DB1281000279B86 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6326AF451DB1281000279B86 /* NotificationCenter.framework */; };
+		6326AF511DB1281000279B86 /* OneBusAwayToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6326AF441DB1280F00279B86 /* OneBusAwayToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6326AF5C1DB12A4500279B86 /* OBAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934198CA1DB0C56D004BBBB7 /* OBAKit.framework */; };
+		639306A51DB1772600A5CAE8 /* OBATodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639306A41DB1772600A5CAE8 /* OBATodayViewController.xib */; };
+		63E5DFEC1DB1320200116A4D /* OBATodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E5DFEA1DB1320200116A4D /* OBATodayViewController.m */; };
+		934195231DAE12E6004BBBB7 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934195211DAE12E6004BBBB7 /* CocoaLumberjack.framework */; };
+		934195251DAE12E6004BBBB7 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934195221DAE12E6004BBBB7 /* CocoaLumberjackSwift.framework */; };
 		934196E21DB0C124004BBBB7 /* MKMapView+oba_Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 934196D71DB0C124004BBBB7 /* MKMapView+oba_Additions.m */; };
 		934196E31DB0C124004BBBB7 /* UINavigationController+oba_Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 934196D91DB0C124004BBBB7 /* UINavigationController+oba_Additions.m */; };
 		934196E41DB0C124004BBBB7 /* UITableViewCell+oba_Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 934196DB1DB0C124004BBBB7 /* UITableViewCell+oba_Additions.m */; };
@@ -202,6 +209,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6326AF4F1DB1281000279B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6326AF431DB1280F00279B86;
+			remoteInfo = OneBusAwayToday;
+		};
 		934198C91DB0C56D004BBBB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 934198C41DB0C56D004BBBB7 /* OBAKit.xcodeproj */;
@@ -233,6 +247,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6326AF591DB1281000279B86 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6326AF511DB1281000279B86 /* OneBusAwayToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		936F45191C780E7700C61656 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +315,14 @@
 		932CCEC01DC3D2DB001C8405 /* PMKMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKMapKit.framework; path = Carthage/Build/iOS/PMKMapKit.framework; sourceTree = "<group>"; };
 		932CCEC11DC3D2DB001C8405 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		932CCEC21DC3D2DB001C8405 /* SwiftMessages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMessages.framework; path = Carthage/Build/iOS/SwiftMessages.framework; sourceTree = "<group>"; };
+		6326AF441DB1280F00279B86 /* OneBusAwayToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneBusAwayToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6326AF451DB1281000279B86 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		639306A41DB1772600A5CAE8 /* OBATodayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OBATodayViewController.xib; sourceTree = "<group>"; };
+		63E5DFE61DB131E200116A4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E5DFE91DB1320200116A4D /* OBATodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBATodayViewController.h; sourceTree = "<group>"; };
+		63E5DFEA1DB1320200116A4D /* OBATodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBATodayViewController.m; sourceTree = "<group>"; };
+		934195211DAE12E6004BBBB7 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		934195221DAE12E6004BBBB7 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
 		934196D61DB0C124004BBBB7 /* MKMapView+oba_Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+oba_Additions.h"; sourceTree = "<group>"; };
 		934196D71DB0C124004BBBB7 /* MKMapView+oba_Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+oba_Additions.m"; sourceTree = "<group>"; };
 		934196D81DB0C124004BBBB7 /* UINavigationController+oba_Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+oba_Additions.h"; sourceTree = "<group>"; };
@@ -585,6 +618,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6326AF411DB1280F00279B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6326AF5C1DB12A4500279B86 /* OBAKit.framework in Frameworks */,
+				6326AF461DB1281000279B86 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		936F45D61C78D06600C61656 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -600,6 +642,7 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* OneBusAway.app */,
 				936F45D91C78D06600C61656 /* OneBusAwayTests.xctest */,
+				6326AF441DB1280F00279B86 /* OneBusAwayToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -611,6 +654,7 @@
 				93528AAF1C8D50E900783E9A /* OneBusAway.entitlements */,
 				93631E4A1604F96800CB7209 /* OBAApplicationDelegate.h */,
 				93631E4B1604F96800CB7209 /* OBAApplicationDelegate.m */,
+				6326AF5A1DB1284E00279B86 /* extensions */,
 				934198261DB0C1CA004BBBB7 /* utilities */,
 				934197F11DB0C1BA004BBBB7 /* controls */,
 				934197EF1DB0C1AA004BBBB7 /* protocols */,
@@ -658,6 +702,7 @@
 				93528AB01C8D517100783E9A /* CloudKit.framework */,
 				93528AAD1C8D50D200783E9A /* MapKit.framework */,
 				93A923A11C21DCD600A657C8 /* SafariServices.framework */,
+				6326AF451DB1281000279B86 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -726,6 +771,25 @@
 			);
 			path = table_cells;
 			sourceTree = "<group>";
+		};
+		6326AF5A1DB1284E00279B86 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6326AF5B1DB1285800279B86 /* today */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		6326AF5B1DB1285800279B86 /* today */ = {
+			isa = PBXGroup;
+			children = (
+				63E5DFE91DB1320200116A4D /* OBATodayViewController.h */,
+				63E5DFEA1DB1320200116A4D /* OBATodayViewController.m */,
+				63E5DFE61DB131E200116A4D /* Info.plist */,
+				639306A41DB1772600A5CAE8 /* OBATodayViewController.xib */,
+			);
+			name = today;
+			path = extensions/today;
 		};
 		934196D51DB0C124004BBBB7 /* categories */ = {
 			isa = PBXGroup;
@@ -1457,16 +1521,35 @@
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				936F45191C780E7700C61656 /* Embed Frameworks */,
 				938B84231D8686B800DB0AF0 /* Carthage Integration */,
+				6326AF591DB1281000279B86 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				93BBB3F61DB4B30E00694940 /* PBXTargetDependency */,
+				6326AF501DB1281000279B86 /* PBXTargetDependency */,
 			);
 			name = OneBusAway;
 			productName = org.onebusaway.iphone;
 			productReference = 1D6058910D05DD3D006BFB54 /* OneBusAway.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6326AF431DB1280F00279B86 /* OneBusAwayToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6326AF581DB1281000279B86 /* Build configuration list for PBXNativeTarget "OneBusAwayToday" */;
+			buildPhases = (
+				6326AF401DB1280F00279B86 /* Sources */,
+				6326AF411DB1280F00279B86 /* Frameworks */,
+				6326AF421DB1280F00279B86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneBusAwayToday;
+			productName = OneBusAwayToday;
+			productReference = 6326AF441DB1280F00279B86 /* OneBusAwayToday.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		936F45D81C78D06600C61656 /* OneBusAwayTests */ = {
 			isa = PBXNativeTarget;
@@ -1516,6 +1599,10 @@
 							};
 						};
 					};
+					6326AF431DB1280F00279B86 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
 					936F45D81C78D06600C61656 = {
 						CreatedOnToolsVersion = 7.2.1;
 						ProvisioningStyle = Manual;
@@ -1550,6 +1637,7 @@
 			targets = (
 				1D6058900D05DD3D006BFB54 /* OneBusAway */,
 				936F45D81C78D06600C61656 /* OneBusAwayTests */,
+				6326AF431DB1280F00279B86 /* OneBusAwayToday */,
 			);
 		};
 /* End PBXProject section */
@@ -1592,6 +1680,14 @@
 				5B7C4A5A1DB96E6A00853DD5 /* Localizable.strings in Resources */,
 				9341981E1DB0C1BA004BBBB7 /* OBALabelAndSwitchTableViewCell.xib in Resources */,
 				934197DE1DB0C14C004BBBB7 /* ApptentiveResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6326AF421DB1280F00279B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639306A51DB1772600A5CAE8 /* OBATodayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1752,6 +1848,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6326AF401DB1280F00279B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E5DFEC1DB1320200116A4D /* OBATodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		936F45D51C78D06600C61656 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1808,6 +1912,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6326AF501DB1281000279B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6326AF431DB1280F00279B86 /* OneBusAwayToday */;
+			targetProxy = 6326AF4F1DB1281000279B86 /* PBXContainerItemProxy */;
+		};
 		936F45DF1C78D06600C61656 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1D6058900D05DD3D006BFB54 /* OneBusAway */;
@@ -1933,6 +2042,117 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		6326AF521DB1281000279B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = "$(SRCROOT)/extensions/today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.onebusaway.iphone.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6326AF531DB1281000279B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = "$(SRCROOT)/extensions/today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.onebusaway.iphone.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6326AF541DB1281000279B86 /* AppStoreDistribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = "$(SRCROOT)/extensions/today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.onebusaway.iphone.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStoreDistribution;
+		};
+		6326AF551DB1281000279B86 /* AdHocDistribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = "$(SRCROOT)/extensions/today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.onebusaway.iphone.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHocDistribution;
 		};
 		936F45E11C78D06600C61656 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2451,6 +2671,17 @@
 				1D6058950D05DD3E006BFB54 /* Release */,
 				D6BEE73F10474E58003655A1 /* AppStoreDistribution */,
 				D6575AF60FEE8B0900D6D987 /* AdHocDistribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6326AF581DB1281000279B86 /* Build configuration list for PBXNativeTarget "OneBusAwayToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6326AF521DB1281000279B86 /* Debug */,
+				6326AF531DB1281000279B86 /* Release */,
+				6326AF541DB1281000279B86 /* AppStoreDistribution */,
+				6326AF551DB1281000279B86 /* AdHocDistribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
